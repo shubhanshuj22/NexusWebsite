@@ -1,2 +1,4 @@
 # NexusWebsite
-This repository is source code of Nexus Website.
+This repository is source code of Nexus Website.Nexus is the technical fest organized under ASME. In this fest there are 6 to 10 events where every event belongs to technical or non-technical field. ASME stand for American Society of Mechanical Engineering. ASME is International society which organize technical Workshops, Webinar and many courses. 
+This is Static website which gives all the information about Nexus, helps the user to find details and rules of an event. The website has been developed in HTML, CSS. HTML is a markup language which is in reality a backbone of any site, any site can’t structured without the knowledge of html. If we make our web page only with the help of html, than we can’t add many of the effective features in a web page, for making a web page more effective we use various platforms such as CSS and JavaScript. So here we are using these entire features to make our web pages more effective as well as efficient.
+
