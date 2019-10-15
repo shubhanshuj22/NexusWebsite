@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Guess Who??</title>
+    <style type="text/css">
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body{
+  background: url(download/Nexus-CS.jpg) 50% 50%;
+  background-size: cover;
+}
+.container{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  text-align: center;
+  color:  green;
+}
+.count{
+  margin: 40px 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+}
+.countd{
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border: 2px solid;
+  margin: 0 1%;
+  font-size: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.countd span{
+  display: block;
+  font-size: 16px;
+  margin-top: 14%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="count">
+          <div class="countd">
+            <span id="days">00</span>
+            DAYS
+          </div>
+
+          <div class="countd">
+            <span id="hours">00</span>
+            HOUR
+          </div>
+
+          <div class="countd">
+            <span id="minutes">00</span>
+            MIN.
+          </div>
+
+          <div class="countd">
+            <span id="seconds" style="font-size: 12">00</span>
+             SEC.
+          </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+  alert("For best view open in desktop site");
+  var count = new Date("oct 20,2019 00:01:00").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var d = count - now;
+
+    var days = Math.floor(d/(1000*60*60*24));
+    var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+    var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+    var seconds = Math.floor((d%(1000*60))/1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if(d <= 0){
+      clearInterval(x);
+    }
+  },1000);
+</script>
+  </body>
+</html>
