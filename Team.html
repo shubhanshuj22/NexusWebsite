@@ -29,10 +29,9 @@
 }
     
  .nexus{
-     
-         font-size: 70px;
-         font-family:fantasy;
-         margin: 0px;
+     font-size: 300%;
+     font-family:fantasy;
+     margin: 0px;
     }
     
     .main{
@@ -44,14 +43,15 @@
     }
     .D{
         
-        margin: 40px;
+        margin: 0px;
         display: block;
         text-align: center;
         position: relative;
       
     }
     .d1{
-        margin: 10px;
+        
+       margin: 1%;
         padding: 5px;
         height: 250px;
         width: 250px;;
@@ -67,7 +67,7 @@
         padding: 15px;
         height: 200px;
         width: 200px;
-        left: 6px;
+        left: 0px;
         display: inline;
         background-color: white;
         position: absolute;
@@ -82,11 +82,28 @@
         display: inline;
         background-color: #00504d;
         position: absolute;
-        transition: 6s;
-        opacity: .94;
-        left: 6px;
+        backface-visibility: hidden;
+        transform: perspective(600px) rotateY(0deg);
+        transition: transform 2s linear 0s;
+        text-shadow: 3px 4px 4px #061a12;
+        left: 0px;
         border-radius: 30px;
         box-shadow: 0px 10px 20px 8px black;
+    }
+    .back{
+        margin: 10px;
+        padding: 15px;
+        height: 200px;
+        width: 200px;
+        transform: perspective(600px) rotateY(180deg);
+        transition: transform 2s linear 0s;
+        display: inline;
+        background-color: #00504d;
+        position: absolute;
+        line-height: 1.5;
+        opacity: .94;
+        left: 0px;
+        border-radius: 30px;    
     }
     .info img{
         position: absolute;
@@ -110,22 +127,71 @@
         
         
     }
+/*
     .info:hover{
         transform: rotateY(360deg);
         border-color: white;
         box-shadow:3px 3px 15px 1px #d3bf25; 
         text-shadow: 3px 4px 4px #061a12;
-        font-size: 20px;
-        cursor: pointer;  
+        font-size: 18px;
+        cursor: pointer; 
+        transform: perspective(600px) rotateY(-360deg);
     }
+    .back:hover{
+         border-color: white;
+        box-shadow:3px 3px 15px 1px #d3bf25; 
+        text-shadow: 3px 4px 4px #061a12;
+        font-size: 18px;
+        cursor: pointer; 
+        transform: perspective(600px) rotateY(0deg);
+    }
+    
+    
+*/
+    
+    .d1:hover>.info {
+            transform: perspective(600px) rotateY(-180deg);
+         
+      
+        cursor: pointer; 
+        }
+
+        .d1:hover>.back {
+            transform: perspective(600px) rotateY(0deg);
+            border-color: white;
+        box-shadow:3px 3px 15px 1px #d3bf25; 
+        text-shadow: 3px 4px 4px #061a12;
+            cursor: pointer;
+        }
+    
+    
     hr{
         border-top: 2px solid #1a5044;
         border-radius: 40px noshade black;
         width: 60%;
         position: relative;
         left: 20%;
+        margin: 20px;
     }
-    
+    .head{
+        margin:5px;
+        font-size: 20px;
+        padding: 5px;
+        color: white;
+        font-family:serif;
+        font-weight: 100px;
+        width: 89%;
+        text-align: center;
+    }
+    .subhead{
+        padding:  5px;
+        color: white;
+        font-family:serif;
+        font-weight: 100px;
+        width: 89%;
+        text-align: center;
+        
+    }
     
     
     </style>
@@ -134,8 +200,8 @@
 <body>
    
 <div class="header">
-    <h1 class="nexus"><span style="color: green; font-size: 85px">N </span><span>e x u s &nbsp; 4.O</span></h1>
-    <span style="margin-top: 0px;">Some tag line?</span>
+  <h1 class="nexus"><span style="color: green; font-size: 140%">N</span><span>exus &nbsp;4.O</span></h1>
+  <span style="margin-top: 0px;">Some tag line?</span>
 </div>
     
     
@@ -147,6 +213,16 @@
                         <img src="download/asme.jpg">
                     </div>
 
+                    <div class="back">
+                        <span class="head" ><b>Professor</b></span>
+                        <br>
+                        <span class="subhead"  >Institute of Engineering & Technology </span>
+                        <br><br>
+                        <span class="head"><b>Department</b></span>
+                        <br>
+                        <span class="subhead" >Department of Mechanical Engineering</span>
+                    </div>
+                
                     <div class="info">
                         <img src="download/photo/Kamal-Sharma.jpg" alt="Prof.(Dr.) Kamal Sharma Picture" >
 
@@ -154,6 +230,10 @@
                         <br>
                         <span style="top: 180px;">Section Advisor</span>
                     </div>
+                
+                
+                   
+                
 
             </div>
 
@@ -162,6 +242,16 @@
                         <img src="download/asme.jpg">
                     </div>
 
+                 <div class="back">
+                        <span class="head" ><b>Professor</b></span>
+                        <br>
+                        <span class="subhead"  >Institute of Engineering & Technology </span>
+                        <br><br>
+                        <span class="head"><b>Department</b></span>
+                        <br>
+                        <span class="subhead" >Department of Mechanical Engineering</span>
+                    </div>
+                 
                     <div class="info">
                         <img src="download/photo/Prashant-Dixit.jpg" alt="Mr. Prashant Dixit Picture" >
 
@@ -177,6 +267,16 @@
                         <img src="download/asme.jpg">
                     </div>
 
+                 <div class="back">
+                        <span class="head" ><b>Professor</b></span>
+                        <br>
+                        <span class="subhead"  >Institute of Engineering & Technology </span>
+                        <br><br>
+                        <span class="head"><b>Department</b></span>
+                        <br>
+                        <span class="subhead" >Department of Mechanical Engineering</span>
+                    </div>
+                 
                     <div class="info">
                         <img src="download/photo/Nitin-Kukreja.jpg" alt="Mr. Nitin Kukreja Picture" >
 
@@ -279,7 +379,7 @@
            
     </div>
       
-      <div class="D" style="margin-top: 10px;">
+      <div class="D" style="margin-top:10px;">
             <div class="d1">
                     <div class="asme">
                         <img src="download/asme.jpg">
