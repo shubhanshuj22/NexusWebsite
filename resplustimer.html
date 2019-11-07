@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Guess Who??</title>
-    <style type="text/css">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 body,html{
   margin: 0;
   padding: 0;
@@ -11,10 +10,47 @@ body,html{
   height: 100%;
 }
 body{
-  background: url("download/Nexus-CS.jpg") 50% 50%;
+  background: url(Nexus-CS.jpg) 50% 50%;
   background-size: cover;
 }
-.container{
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  text-align: center;
+  color:  green;
+}
+.count{
+  margin: 30px 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+}
+.countd{
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  margin: 0 0%;
+  font-size: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.countd span{
+  display: block;
+  font-size: 18px;
+  margin-top: 14%;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container{
   width: 100%;
   position: absolute;
   top: 30%;
@@ -45,8 +81,113 @@ body{
   font-size: 20px;
   margin-top: 14%;
 }
-    </style>
-  </head>
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  text-align: center;
+  color:  green;
+}
+.count{
+  margin: 40px 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-80%);
+}
+.countd{
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  margin: 0 1%;
+  font-size: 18px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.countd span{
+  display: block;
+  font-size: 20px;
+  margin-top: 14%;
+} 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  text-align: center;
+  color:  green;
+}
+.count{
+  margin: 40px 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-80%);
+}
+.countd{
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  margin: 0 1%;
+  font-size: 18px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.countd span{
+  display: block;
+  font-size: 20px;
+  margin-top: 14%;
+} 
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ .container{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  text-align: center;
+  color:  green;
+}
+.count{
+  margin: 40px 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-80%);
+}
+.countd{
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  margin: 0 1%;
+  font-size: 18px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.countd span{
+  display: block;
+  font-size: 20px;
+  margin-top: 14%;
+}
+}
+</style>
+</head>
   <body style="font-size: 25px;line-height: 28px;letter-spacing: -0.037em;font-weight: 500;font-style: italic;">
     <div class="container">
         <div class="count">
