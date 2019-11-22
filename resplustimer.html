@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Guess Who??</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style type="text/css">
 body,html{
   margin: 0;
   padding: 0;
@@ -12,45 +21,10 @@ body,html{
 body{
   background: url(download/Nexus-CS.jpg) 50% 50%;
   background-size: cover;
+  background-position: center;
+  
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .container{
-  width: 100%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-60%);
-  text-align: center;
-  color:  green;
-}
-.count{
-  margin: 30px 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-60%);
-}
-.countd{
-  display: inline-block;
-  width: 75px;
-  height: 75px;
-  border: 2px solid;
-  margin: 0 0%;
-  font-size: 16px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.countd span{
-  display: block;
-  font-size: 18px;
-  margin-top: 14%;
-}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .container{
+.container{
   width: 100%;
   position: absolute;
   top: 30%;
@@ -64,153 +38,54 @@ body{
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-80%);
+  transform: translate(-35%,-45%);
 }
 .countd{
   display: inline-block;
-  width: 75px;
-  height: 75px;
+  width: 105px;
+  height: 105px;
   border: 2px solid;
   margin: 0 1%;
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 50%;
   overflow: hidden;
 }
 .countd span{
   display: block;
-  font-size: 20px;
+  font-size: 26px;
   margin-top: 14%;
 }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .container{
-  width: 100%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-60%);
-  text-align: center;
-  color:  green;
-}
-.count{
-  margin: 40px 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-80%);
-}
-.countd{
-  display: inline-block;
-  width: 75px;
-  height: 75px;
-  border: 2px solid;
-  margin: 0 1%;
-  font-size: 18px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.countd span{
-  display: block;
-  font-size: 20px;
-  margin-top: 14%;
-} 
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .container{
-  width: 100%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-60%);
-  text-align: center;
-  color:  green;
-}
-.count{
-  margin: 40px 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-80%);
-}
-.countd{
-  display: inline-block;
-  width: 75px;
-  height: 75px;
-  border: 2px solid;
-  margin: 0 1%;
-  font-size: 18px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.countd span{
-  display: block;
-  font-size: 20px;
-  margin-top: 14%;
-} 
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
- .container{
-  width: 100%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-60%);
-  text-align: center;
-  color:  green;
-}
-.count{
-  margin: 40px 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-80%);
-}
-.countd{
-  display: inline-block;
-  width: 75px;
-  height: 75px;
-  border: 2px solid;
-  margin: 0 1%;
-  font-size: 18px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.countd span{
-  display: block;
-  font-size: 20px;
-  margin-top: 14%;
-}
-}
-</style>
-</head>
-  <body style="font-size: 25px;line-height: 28px;letter-spacing: -0.037em;font-weight: 500;font-style: italic;">
+  </style>
+  </head>
+  <body>
     <div class="container">
         <div class="count">
-          <div class="countd">
-            <span id="days">00</span>
-            DAYS
+          <div class="row">
+            <div class="justify-content-center col-lg-2 col-md-2 col-sm-2 col-2">
+              <div class="countd">
+                <span id="days">00</span>DAYS
+              </div>
+            </div>
+
+          <div class="justify-content-center col-lg-2 col-md-2 col-sm-2 col-2">
+            <div class="countd">
+              <span id="hours">00</span>HOUR
+            </div>
           </div>
 
-          <div class="countd">
-            <span id="hours">00</span>
-            HOUR
+          <div class="justify-content-center col-lg-2 col-md-2 col-sm-2 col-2">
+            <div class="countd">
+              <span id="minutes">00</span>MINUTE
+            </div>
           </div>
 
-          <div class="countd">
-            <span id="minutes">00</span>
-            MIN.
-          </div>
-
-          <div class="countd">
-            <span id="seconds" style="font-size: 12">00</span>
-             SEC.
+          <div class="justify-content-center col-lg-2 col-md-2 col-sm-2 col-2">
+            <div class="countd">
+              <span id="seconds" style="font-size: 12">00</span>SECOND
+            </div>
           </div>
         </div>
+      </div>
     </div>
 
 
@@ -220,17 +95,14 @@ body{
   var x = setInterval(function() {
     var now = new Date().getTime();
     var d = count - now;
-
     var days = Math.floor(d/(1000*60*60*24));
     var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
     var minutes = Math.floor((d%(1000*60*60))/(1000*60));
     var seconds = Math.floor((d%(1000*60))/1000);
-
     document.getElementById("days").innerHTML = days;
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
-
     if(d <= 0){
       clearInterval(x);
     }
