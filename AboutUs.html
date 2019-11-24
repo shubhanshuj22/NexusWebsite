@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us(Nexus 4.O)</title>
+    
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+<style>
+    *{
+        margin: 0px;
+    }
+    
+/* Header/logo Title */
+div.header {
+    
+       font-size: 1.5vw;
+        padding: 10px;
+        text-align: center;
+        background: Black;
+        color: white;
+    position: sticky;
+        position: -webkit-sticky;
+        top: 0; /* required */
+        z-index: 2;
+}
+    
+ .nexus{
+     font-size: 4.5vw;
+     font-family:fantasy;
+     margin: 0px;
+    }
+
+/*    Main css*/
+    .main{
+        padding: 5%;
+        background-color: aquamarine;
+/*       line-height: 1px;*/
+    }
+    h1{
+        font-size: 2.2vw;
+        font-family:monospace;
+    }
+    p{
+        font-size: 1.2vw;
+        font-family:serif;
+        padding: 0px 6% ;
+        
+    }
+    ul{
+        padding: 0px 9%;
+    }
+    
+    
+    
+    
+    
+       /* Footer */
+.footer{
+    position: relative;
+  padding: 4%;
+  text-align: center;
+  background-color: black;
+    
+}
+    .center{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    
+    .btn{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        margin: 1%;
+        border-radius: 30%;
+        box-shadow: 0px 5px 15px -5px #00000070;
+        overflow: hidden;
+        position: relative;
+        color: #6188ce;
+        
+    }
+    .btn i{
+        font-size: 16px;
+        line-height: 50px;
+        transition: .2s linear;
+    }
+    .btn:hover i{
+        transform: scale(1.3);
+        color: white;
+    }
+    .btn::before{
+        content: '';
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background-color: #6188ce;
+        transform: rotate(45deg);
+        left :-10%;
+        top:90%;
+        
+        
+    }
+    
+    .btn:hover::before{
+        animation: aaa 1s 1;
+        top: -10%;
+        left: -10%;
+        
+    }
+    @keyframes aaa{
+        0%{
+            left :-110%;
+        top:90%;
+        }
+        50%{
+            left: 10%;
+            top: -30%
+        }
+        100%{
+            top: -10%;
+        left: -10%;
+            
+        }
+    }
+    
+    
+    
+</style>
+</head>
+
+<body>
+    
+<!-- Header -->
+<div class="header">
+  <h1 class="nexus"><span style="color: green; font-size: 140%">N</span><span>EXUS &nbsp;4.O</span></h1>
+  <span style="margin-top: 0px;">Tech Fest</span>
+</div>
+    
+    
+    <div class="main">
+    <h1>About Us</h1>
+        <br>
+    <p>This is Nexus website.Nexus is the technical fest organized under ASME. In this fest there are 6 to 10 events where every event belongs to technical or non-technical field. ASME stand for American Society of Mechanical Engineering. ASME is International society which organize technical Workshops, Webinar and many courses. This is Static website which gives all the information about Nexus, helps the user to find details and rules of an event. The website has been developed in HTML, CSS. HTML is a markup language which is in reality a backbone of any site, any site can’t structured without the knowledge of html. If we make our web page only with the help of html, than we can’t add many of the effective features in a web page, for making a web page more effective we use various platforms such as CSS and JavaScript. So here we are using these entire features to make our web pages more effective as well as efficient.</p>
+        
+        <br>
+        <br>
+           <h1>Contact Us</h1>
+        <br>
+    <p>For any fornt end development contact us on given email:
+        <br><br>
+        <ul>
+        <li>
+            <span>shubhanshu.jain_cs17@gla.ac.in</span>
+            </li>
+            <br>
+            <li>
+             <span>akash.singh2_cs17@gla.ac.in</span>
+            </li>
+        </ul>
+  
+        </p>
+        
+    </div>
+    
+    
+    
+    
+<!-- Footer -->
+<div class="footer">
+    <div class="center">
+    <div class="col-xl-2.4 col-lg-2.4 col-md-2.4 col-sm-2.4 col-xs-2.4">
+        
+    <a class="btn" href="https://www.facebook.com/asme.glau/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        
+    <a class="btn" href="https://www.instagram.com/asme_glau" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        
+    <a class="btn" href="https://twitter.com/asmeglau" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        
+    <a class="btn" href="https://www.linkedin.com/in/asme-glau-a0193816b/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        
+    <a class="btn" href="https://www.asme.org/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+    
+          </div>
+    </div>
+</div>
+    
+</body>
+</html>
