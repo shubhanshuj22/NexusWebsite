@@ -36,6 +36,10 @@ body {
     background-size: 100%;
 }
 
+    .upperheader{
+        font-size: 1.1vw;
+    }
+    
 /* Header/logo Title */
 div.header {
     
@@ -66,7 +70,7 @@ justify-content: center;
 /* Style the navigation bar links */
 .navbar a {
   color: white;
-    font-size: 1vw;
+    font-size: 16px;
   padding: 1% 1.5%;
   text-decoration: none;
   text-align: center;
@@ -126,12 +130,17 @@ justify-content: center;
     
 .rules{
     display: flex;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     margin-right:  10%; 
     text-align: left;
     justify-content: center;
 }
 
+
+.cord{
+       font-size: 1.6vw;
+        justify-content: center;
+    }
 
 hr{
     border-top: 2px solid #1a5044;
@@ -140,29 +149,30 @@ hr{
     left: 20%;
 }
     
-    h3 a{
+    h4 a{
         color: green;
         
     }
-    h3 a:visited{
+    h4 a:visited{
         color: red;
         
     }
-    
-     h3 a:hover{
+    h4 a:hover{
         color: blue;
         
     }
+    
+    
     h1{
-       font-size: 2.5vw; 
+       font-size: 2.2vw; 
+    }
+    h4{
+        
+       font-size: 2vw; 
     }
     h3{
         
        font-size: 1.7vw; 
-    }
-    h4{
-        
-       font-size: 1.5vw; 
     }
     
     
@@ -185,8 +195,8 @@ hr{
     
     .btn{
         display: inline-block;
-        width: 50px;
-        height: 50px;
+        width: 38px;
+        height: 38px;
         background-color: white;
         margin: 1%;
         border-radius: 30%;
@@ -199,7 +209,7 @@ hr{
     
     .btn i{
         font-size: 16px;
-        line-height: 50px;
+        line-height: 38px;
         transition: .2s linear;
     }
     .btn:hover i{
@@ -249,7 +259,64 @@ hr{
   .row, .navbar {   
       flex-direction: column;
   }
+    
+    .upperheader{
+        font-size: 1.5vw;
+    }
+    
+    
+    .nexus{
+     font-size: 6vw;
+     font-family:fantasy;
+     margin: 0px;
+    }
+     div.header {
+         font-size: 2.2vw;
+        }
+      
+        
 }
+    
+     @media only screen and (max-width: 1000px) {
+         
+         .navbar a {
+             font-size: 1.4vw;
+         }
+         
+  .btn {
+       width: 30px;
+        height: 30px;
+  }
+        .btn i{
+        font-size: 12px;
+        line-height: 30px;
+        transition: .2s linear;
+    }
+         
+         .rules{
+    font-size: 1.5vw;
+    
+}
+
+         
+}
+    
+    @media only screen and (min-width: 1000px) {
+        .navbar a {
+            font-size: 1.4vw;
+        }
+        
+  .btn {
+       width: 45px;
+        height: 45px;
+  }
+        .btn i{
+        font-size: 20px;
+        line-height: 45px;
+        transition: .2s linear;
+    }
+}
+  
     
     
 </style>
@@ -259,7 +326,7 @@ hr{
 
 <!-- Note -->
 <div style="background:yellow;padding-top:.2%;text-align: center;">
-  <h4 style="text-align:center;margin-top: 3px;margin-bottom:0px;font-size: 1vw;">You can take part in every event there is no time clash</h4>
+  <h4 class="upperheader" style="text-align:center;margin-top: 3px;margin-bottom:0px;">You can take part in every event there is no time clash</h4>
 </div>
 
 <!-- Header -->
@@ -272,11 +339,16 @@ hr{
 <div class="navbar">
   
   <a href="#event1">Prototype Showcase</a>
-  <a href="#event2">Coding Showdown</a>
-  <a href="#event3">Pixel</a>
+  <a href="#event2">Runtime Terror</a>
+  <a href="#event3">Brush Kraft</a>
   <a href="#event4">Robotron</a>
-  <a href="#event5">Cad Crunch</a>
-  <a href="#event6">PUB-G</a>
+  <a href="#event5">CAD burry</a>
+    <a href="#event6">Spawn99</a>
+  <a href="#event7">Dronathon</a>
+  <a href="#event8">Techno Trail</a>
+  <a href="#event9">Movie Show</a>
+    
+
 <!--
   <a href="#event7">Event 7</a>
   <a href="#event8">Event 8</a>
@@ -311,25 +383,42 @@ hr{
 
                 </div>
 
-                    <h4>Rules:</h4>
+                    <h4>Rules :</h4>
                 <div class="rules" >
                     <ol>
                     <li>Everyone can participate in this event with his project. </li>
-                    <li>Student is requested to present in proper uniform and working project</li>
-                    <li>Student can have group of maximum 3 member including her/him.</li>
-                    <li>Registration fee : 50 Rs/-</li>
-                    <li>Prize worth : 4000 Rs/-</li>
+                    <li>A participant can only participate in only one project.</li>
+                    <li>Prototype should be in working condition.</li>
+                    <li>The participants should be present in proper uniform for the presentation.</li>
+                    <li>Registration fee :<br>
+                    <ul>
+                        <li>₹100/- for Single participant</li>
+                        <li>₹200/- for group.</li>
+                    </ul>
+                    </li>
+                    <li>Prize worth : ₹10,000/-</li>
+                    
+                     <span><a href="./download/Eventdetails/prototype.doc" style="color: red" >Read More</a></span>
 
                     </ol> 
+                    
                 </div>
-                    <h3 id="event2"><a href="" target="_blank">Click here for Registration</a></h3>
+                   <div class="cord">
+                       <h4>Coordinators :</h4>
+                       <span >Shivam Varshney : 81269 90551</span>
+                        <br>
+                        <span >Satyam Tripthi : 70602 46528 </span>
+                        
+                        
+                    </div>
+                    <h4 id="event2"><a href="" target="_blank">Click here for Registration</a></h4>
 
         </div>
        <br>
     <hr>
     
         <div >
-                    <h1>Coding Showdown</h1>
+                    <h1>Runtime Terror</h1>
                     <h3>12th-April-2018, 4pm-6pm</h3>
                 <div class="posterimg" style="height:50%;">
                     <img src="download/Event/Event2.jpg">
@@ -340,21 +429,33 @@ hr{
                 <div class="rules" >
                   <ol>
                     <li>Everyone can participate in this event who is intrested in coding. </li>
-                    <li>Student is requested to present in proper uniform and with thier laptop</li>
-                    <li>Judge is with online judge of hackerrank</li>
-                    <li>Registration fee : 50 Rs/-</li>
-                    <li>Prize worth : 2000 Rs/-</li>
-
+                    <li>Participants is requested to present on the event time.</li>
+                    <li>Online judge system on hackerrank and codechef. 
+                    <ul>
+                        <li>Hackerrank for 1st year.</li>
+                        <li>Codechef for 2nd year.</li>
+                    </ul>
+                      </li>
+                    <li>Registration fee : ₹50 /-</li>
+                    <li>Prize worth : ₹3,000 /-</li>
+                    <span><a href="./download/Eventdetails/Runtimeterror.doc" style="color: red" >Read More</a></span>
                     </ol> 
                 </div>
-                    <h3 id="event3"><a href="" target="_blank">Click here for Registration</a></h3>
+                    <div class="cord">
+                       <h4>Coordinators :</h4>
+                        <span >Shubhanshu : 83491 12391 </span>
+                        <br>
+                        <span >Tushar Gupta : 96395 33265 </span>
+                        
+                    </div>
+                    <h4 id="event3"><a href="" target="_blank">Click here for Registration</a></h4>
 
         </div>
        <br>
     <hr>
     
         <div >
-                    <h1>Pixel</h1>
+                    <h1>Brush Kraft</h1>
                     <h3>13th-April-2018, 12pm-2pm</h3>
                 <div class="posterimg" style="height:50%;">
                     <img src="download/Event/Event3.jpg">
@@ -364,22 +465,29 @@ hr{
                     <h4>Rules:</h4>
                 <div class="rules" >
                      <ol>
-                    <li>Everyone can participate in this event who is intrested in photography. </li>
-                    <li>Student is can come in casuals and with thier camera/mobile.</li>
-                    <li>Theam will be decided at the venue when student will reach thier.</li>
-                    <li>Registration fee : 30 Rs/-</li>
-                    <li>Prize worth : 1500 Rs/-</li>
-
+                    <li>Everyone can participate in this event who is intrested in poster making. </li>
+                    <li>Participants have to bring there own drawing stuff including colours and brushes.</li>
+                    <li>No need to bring drawing sheets, it will be provided to the participants.</li>
+                    <li>Registration fee : ₹50/-</li>
+                    <li>Prize worth : ₹2,000 /-</li>
+                    <span><a href="./download/Eventdetails/BRUSHKRAFT.docx" style="color: red" >Read More</a></span>
                     </ol> 
                 </div>
-                    <h3 id="event4"><a href="" target="_blank">Click here for Registration</a></h3>
+                    <div class="cord">
+                       <h4>Coordinators :</h4>
+                        <span >Shivam Varshney : 81269 90551</span>
+                        <br>
+                        <span >Satyam Tripthi : 70602 46528 </span>
+                        
+                    </div>
+                    <h4 id="event4"><a href="" target="_blank">Click here for Registration</a></h4>
 
         </div>
        <br>
     <hr>
     
         <div >
-                    <h1>Robotron</h1>
+                    <h1>Roboverse</h1>
                     <h3>13th-April-2018, 12pm-2pm</h3>
                 <div class="posterimg" style="height:50%;">
                     <img src="download/Event/Event4.jpg">
@@ -390,27 +498,37 @@ hr{
                 <div class="rules" >
                      <ol>
                     <li>Everyone can participate in this event who is having robot. </li>
-                    <li>Student is can come in casuals and with thier and team members.</li>
-                    <li>3 member maximum are allowed with single team.</li>
+                    <li>Lego kits are strictly not allowed in any form. </li>
+                    <li>The L X B X H should not exceed 30 X 30 X 30 (cm). </li>
+                    <li>The net weight should not exceed 4 kgs. </li>
+                    <li>Maximum 4 members per team.</li>
                     <li>There 3 round in this event.
                     <ul>
-                    <li>Blazzing wheels</li>    
-                    <li>Roborush</li>
+                    <li>Blazzing Wheels</li>
                     <li>Real Steel</li>
+                    <li>Robo Rugger</li>    
+                    <li>Maze Mice</li>
                     </ul></li>
-                    <li>Registration fee : 200 Rs/-</li>
-                    <li>Prize worth : 6000 Rs/-</li>
-
+                    <li>Registration fee : ₹250/- per event</li>
+                    <li>Prize worth : ₹20,000/-</li>
+                   <span><a href="./download/Eventdetails/ROBOVERSE.docx" style="color: red" >Read More</a></span>
                     </ol> 
                 </div>
-                    <h3 id="event5"><a href="" target="_blank">Click here for Registration</a></h3>
+                    <div class="cord">
+                       <h4>Coordinators :</h4>
+                        <span >Abhishek vashisth : 95983 06558 </span>
+                        <br>
+                        <span >Ram Chandra Dixit : 94537 34097 </span>
+                        
+                    </div>
+                    <h4 id="event5"><a href="" target="_blank">Click here for Registration</a></h4>
 
         </div>
        <br>
     <hr>
     
         <div >
-                    <h1>Cad Crunch</h1>
+                    <h1>CAD burry</h1>
                     <h3>13th-April-2018, 10am-12pm</h3>
                 <div class="posterimg" style="height:50%;">
                     <img src="download/Event/Event5.png">
@@ -420,22 +538,30 @@ hr{
                     <h4>Rules:</h4>
                 <div class="rules" >
                      <ol>
-                    <li>Everyone can participate in this event who know how to design with CAD. </li>
-                    <li>Student is requested to present in proper uniform and with thier laptop.</li>
-                    <li>Design question is given on event time.</li>
-                    <li>Registration fee : 50 Rs/-</li>
-                    <li>Prize worth : 2000 Rs/-</li>
-
+                    <li>Everyone can participate in this event who know how to design. </li>
+                    <li>Participants can use any designing software i.e.AutoCad/Creo/Catia/Solidworks</li>
+                    <li>Participants will have to make the design in the given time interval.</li>
+                    <li>Any participant caught discussing with other participant will be disqualified.</li>
+                    <li>Registration fee : ₹50/-</li>
+                    <li>Prize worth : ₹5,000/-</li>
+                    <span><a href="./download/Eventdetails/CadBurry.docx" style="color: red" >Read More</a></span>
                     </ol> 
                 </div>
-                    <h3 id="event6"><a href="" target="_blank">Click here for Registration</a></h3>
+                    <div class="cord">
+                       <h4>Coordinators :</h4>
+                        <span >Shreyash Shrivastava : 76789 35283 </span>
+                        <br>
+                        <span >Hradayansh Parashari : 73026 02406 </span>
+                        
+                    </div>
+                    <h4 id="event6"><a href="" target="_blank">Click here for Registration</a></h4>
 
         </div>
        <br>
     <hr>
     
         <div >
-                    <h1>PUB-G</h1>
+                    <h1>Spawn99</h1>
                     <h3>14th-April-2018, 12pm-2pm</h3>
                 <div class="posterimg" style="height:50%;">
                     <img src="download/Event/Event6.png">
@@ -445,128 +571,137 @@ hr{
                     <h4>Rules:</h4>
                 <div class="rules" >
                      <ol>
-                    <li>Everyone can participate in this event who is intrested in PUB-G. </li>
-                    <li>Student is can come in casuals and with thier mobile.</li>
-                    <li>Internet will be provided.</li>
-                    <li>Match is divided into 2 parts:
+                    <li>Everyone can participate in this event who is intrested in PUB-G. or COD </li>
+                    <li>Student can come in casuals with thier mobile.</li>
+                    <li>All the paricipated squad will get a chance to play 1 classic match.</li>
+                    <li>If found using any unfair, then that particular squad will be disqualified.</li>
+                    <li>Event is divided into 2 part:
                          <ul>
+                        <li>PUB-G :
+                        <ul>
                         <li>Solo match.</li>
                         <li>Squad match.</li>
                         </ul>
                         
+                        </li>
+                        <li>Call Of Duty.</li>
+                        </ul>
+                        
                          </li>
-                    <li>Registration fee : 30 Rs/Solo and 150 Rs/Squad</li>
-                    <li>Prize worth : 1500 Rs/- and 10Rs/kill</li>
-
+                    <li>Registration fee : ₹50/Solo and ₹200/Squad</li>
+                    <li>Prize worth : ₹ 5,000/- and per kill(check more details)</li>
+                  <span><a href="./download/Eventdetails/spawn99.docx" style="color: red" >Read More</a></span>
                     </ol>
                 </div>
-                    <h3 id="event7"><a href="" target="_blank">Click here for Registration</a></h3>
+                    <div class="cord">
+                       <h4>Coordinators :</h4>
+                        <span >Akash Singh : 94543 36678 </span>
+                        <br>
+                        <span >Aaditya Singh : 75999 62402 </span>
+                        
+                    </div>
+                    <h4 id="event7"><a href="" target="_blank">Click here for Registration</a></h4>
 
         </div>
        <br>
 
-    <!--<hr>
-    
-
-        <div >
-                    <h1>EVENT NAME 7</h1>
-                    <h3>12th-April-2018, 4-6pm</h3>
+    <hr>
+    <div >
+                    <h1>DroneHeaven</h1>
+                    <h3>14th-April-2018, 12pm-2pm</h3>
                 <div class="posterimg" style="height:50%;">
-                    <img src="download/agifcolossalspiral2opt.gif">
+                    <img src="download/Event/Event6.png">
 
                 </div>
 
                     <h4>Rules:</h4>
                 <div class="rules" >
-                    <ol>
-                    <li>This is a Rule of upper event.</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-
-                    </ol> 
+                     <ol>
+                    <li>Everyone can participate in this event who is having drone. </li>
+                    <li>Maximum 4 members per team.</li>
+                    <li>Each team would be given only 1 chance in each round . </li>
+                    <li>The teams would lose their turn if they are not ready in time. </li>
+                    <li>Drone specifications : 
+                         <ul>
+                        <li>6 -8 inch propeller.</li>
+                        <li>2 to 3 blade probs </li>
+                        <li>Frame size  min:250mm -max:450mm (approx)</li>
+                        </ul>
+                        
+                         </li>
+                    <li>Registration fee : ₹2,000/team</li>
+                    <li>Prize worth : ₹23,500/-</li>
+                    <span><a href="./download/Eventdetails/DroneHeaven.docx" style="color: red" >Read More</a></span>
+                    </ol>
                 </div>
-                    <h3 id="event8"><a href="" target="_blank">Click here for Registration</a></h3>
+                    <div class="cord">
+                       <h4>Coordinators :</h4>
+                        <span >Abhinav Dusia : 82993 62447 </span>
+                        <br>
+                        <span >Kunal Maheshwari : 74549 35392 </span>
+                        
+                    </div>
+                    <h4 id="event8"><a href="" target="_blank">Click here for Registration</a></h4>
 
         </div>
        <br>
+
     <hr>
     
-        <div >
-                    <h1>EVENT NAME 8</h1>
-                    <h3>DATE AND TIME</h3>
+    <div >
+                    <h1>Techno Trail</h1>
+                    <h3>14th-April-2018, 12pm-2pm</h3>
                 <div class="posterimg" style="height:50%;">
-                    <img src="download/agifcolossalspiral2opt.gif">
+                    <img src="download/Event/Event6.png">
 
                 </div>
 
                     <h4>Rules:</h4>
                 <div class="rules" >
-                    <ol>
-                    <li>This is a Rule of upper event.</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-
-                    </ol> 
+                     <ol>
+                    <li>There will be a team of four-five players. </li>
+                    <li>Every team will be given a riddle at first with a problem.</li>
+                    <li>Solve and team have to reach that particular location and search for the hotspot</li>
+                    <li>One can only enter a password only for 3 times or they will get disqualified.</li>
+                    <li>After this they will be given a problem for the next location again. </li>
+                    
+                    <li>Registration fee : ₹30/Solo and ₹100/team</li>
+                    <li>Prize worth : ₹1000</li>
+                 <span><a href="./download/Eventdetails/Treasure_Hunt.docx" style="color: red" >Read More</a></span>
+                    </ol>
                 </div>
-                    <h3 id="event9"><a href="" target="_blank">Click here for Registration</a></h3>
+                    <div class="cord">
+                       <h4>Coordinators :</h4>
+                        <span >Shivam Varshney : </span>
+                        <br>
+                        <span >Satyam Tripthi : </span>
+                        
+                    </div>
+                    <h4 id="event9"><a href="" target="_blank">Click here for Registration</a></h4>
 
         </div>
        <br>
+
+    <hr>
+    <div >
+                    <h1>Movie Show</h1>
+                    <h3>14th-April-2018, 12pm-2pm</h3>
+                <div class="posterimg" style="height:50%;">
+                    <img src="download/Event/Event6.png">
+
+                </div>
+
+                    <h4>Note: This event is only for UDAAAN children.</h4>
+                
+
+        </div>
+       <br>
+
     <hr>
     
-        <div >
-                    <h1>EVENT NAME 9</h1>
-                    <h3>DATE AND TIME</h3>
-                <div class="posterimg" style="height:50%;">
-                    <img src="download/agifcolossalspiral2opt.gif">
 
-                </div>
+        
 
-                    <h4>Rules:</h4>
-                <div class="rules" >
-                    <ol>
-                    <li>This is a Rule of upper event.</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-
-                    </ol> 
-                </div>
-                    <h3 id="event10"><a href="" target="_blank">Click here for Registration</a></h3>
-
-        </div>
-       <br>
-    <hr>
-    
-        <div >
-                    <h1>EVENT NAME 10</h1>
-                    <h3>DATE AND TIME</h3>
-                <div class="posterimg" style="height:50%;">
-                    <img src="download/agifcolossalspiral2opt.gif">
-
-                </div>
-
-                    <h4>Rules:</h4>
-                <div class="rules" >
-                    <ol>
-                    <li>This is a Rule of upper event.</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-                    <li>Rule</li>
-
-                    </ol> 
-                </div>
-                    <h3><a href="" target="_blank">Click here for Registration</a></h3>
-
-        </div>
-       <br>
--->
    
 </div>
     
