@@ -56,21 +56,21 @@ div.header {
 /*       line-height: 1px;*/
     }
     h1{
-        font-size: 2.2vw;
+        font-size: 28px;
         font-family:monospace;
     }
     p{
-        font-size: 1.2vw;
+        font-size: 17px;
         font-family:serif;
-        padding: 0px 6% ;
+        padding: 0px 0 0 6% ;
         
     }
     p span{
-         font-size: 1.2vw;
+         font-size: 17px;;
         font-family:serif;
     }
     ul{
-         font-size: 1.2vw;
+         font-size:17px;
         font-family:serif;
         padding: 0px 9%;
     }
@@ -153,8 +153,29 @@ div.header {
             
         }
     }
+    @media only screen and (max-width: 600px) {
+  .btn {
+       width: 30px;
+        height: 30px;
+  }
+        .btn i{
+        font-size: 12px;
+        line-height: 30px;
+        transition: .2s linear;
+    }
+}
     
-    
+    @media only screen and (min-width: 1000px) {
+  .btn {
+       width: 45px;
+        height: 45px;
+  }
+        .btn i{
+        font-size: 20px;
+        line-height: 45px;
+        transition: .2s linear;
+    }
+}
     
 </style>
 </head>
@@ -177,19 +198,19 @@ div.header {
         <br>
            <h1>Contact Us</h1>
         <br>
-    <p>For any fornt end development contact us on given email:
-        <br><br>
+    <p>For any fornt end development contact us on given email:</p>
+        <br ><br >
         <ul>
-        <li>
-            <span>shubhanshu.jain_cs17@gla.ac.in</span>
-            </li>
-            <br>
             <li>
-             <span>akash.singh2_cs17@gla.ac.in</span>
+            <span><a href="mailto:shubhanshu.jain_cs17@gla.ac.in?Subject=Front end development " target="_top">shubhanshu.jain_cs17@gla.ac.in</a></span>
+            </li>
+            <br >
+            <li>
+             <span><a href="mailto:akash.singh2_cs17@gla.ac.in?Subject=Front end development " target="_top">akash.singh2_cs17@gla.ac.in</a></span>
             </li>
         </ul>
   
-        </p>
+        
         
     </div>
     
@@ -214,6 +235,8 @@ div.header {
           </div>
     </div>
 </div>
+    
+ 
     
 </body>
 </html>
