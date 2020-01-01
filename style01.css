@@ -2,7 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background: url(download/Nexus-CS.jpg) 50% 50%;
+	background: url(Nexus-CS.jpg) 50% 50%;
 	background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,6 +74,10 @@ body
 .content-carrousel figure:nth-child(6)
 {
 	transform:rotateY(300deg) translateZ(00px);
+}
+.content-carrousel figure:nth-child(7)
+{
+	transform:rotateY(300deg) translateZ(1px);
 }
 /*.content-carrousel figure:nth-child(7)
 {
