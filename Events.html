@@ -23,6 +23,7 @@
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
     
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 * {
   box-sizing: border-box;
@@ -85,12 +86,10 @@ justify-content: center;
 
 /* Column container */
 /*
-
 .row {  
   display: flex;
   flex-wrap: wrap;
 }
-
 .side {
   flex: 30%;
   background-color: #f1f1f1;
@@ -145,9 +144,11 @@ justify-content: center;
 hr{
     border-top: 2px solid #1a5044;
     border-radius: 40px noshade black;
-    width: 80%;
+    width: 100%;
     left: 20%;
+   
 }
+   
     
     h4 a{
         color: green;
@@ -165,13 +166,14 @@ hr{
     
     h1{
        font-size: 2.2vw; 
+         font-weight: 620;
     }
     h4{
-        
+        font-weight: 490;
        font-size: 2vw; 
     }
     h3{
-        
+        font-weight: 590;
        font-size: 1.7vw; 
     }
     
@@ -319,6 +321,18 @@ hr{
   
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </style>
      
 </head>
@@ -360,7 +374,6 @@ hr{
 <!-- The flexible grid (content) -->
 <!--
 <div class="row">
-
   <div class="side">
     <h2>About Me</h2>
     <h5>Photo of me:</h5>
@@ -377,10 +390,10 @@ hr{
 <div class="main">
         <div id="event1">
                     <h1>Prototype Showcase</h1>
-                    <h3>17-January-2020, 10AM-12PM</h3>
+                    <h3>14-February-2020, 10AM-12PM</h3>
                     <h3>Venue : Auditorium</h3>
                 <div class="posterimg" style="height:50%;">
-                    <img src="download/Event/Event1.jpg">
+                    <img src="download/Event/proto.jpg">
 
                 </div>
 
@@ -420,7 +433,7 @@ hr{
     
         <div >
                     <h1>Runtime Terror</h1>
-                    <h3>17-January-2020, 2PM-5PM</h3>
+                    <h3>14-February-2020, 2PM-5PM</h3>
                     <h3>Venue : AB-7, 108 | 109</h3>
                 <div class="posterimg" style="height:50%;">
                     <img src="download/Event/Runtimeterror.png">
@@ -458,10 +471,10 @@ hr{
     
         <div >
                     <h1>Brush Kraft</h1>
-                    <h3>-January-2020, 12PM-3PM</h3>
+                    <h3>15-February-2020, 12PM-3PM</h3>
                     <h3>Venue : Ninaad ground</h3>
                 <div class="posterimg" style="height:50%;">
-                    <img src="download/Event/Event3.jpg">
+                    <img src="download/Event/Brushcraft.jpg">
 
                 </div>
 
@@ -490,10 +503,74 @@ hr{
     
         <div >
                     <h1>Roboverse</h1>
-                    <h3>18-January-2020, 9:30AM-5PM</h3>
+                    <h3>15-February-2020, 9:30AM-5PM</h3>
                     <h3>Venue : KC ground</h3>
                 <div class="posterimg" style="height:50%;">
-                    <img src="download/Event/Event4.jpg">
+<!--                    <img src="download/Event/Event4.jpg">-->
+                
+                
+                
+                
+                
+                
+                
+                
+       
+                     <div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="download/Event/Event4.jpg" style="width:100%">
+  <img class="mySlides" src="download/Event/r1.jpg" style="width:100%">
+  <img class="mySlides" src="download/Event/r2.jpg" style="width:100%">
+  <img class="mySlides" src="download/Event/r3.jpg" style="width:100%">
+  <img class="mySlides" src="download/Event/r4.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
 
                 </div>
 
@@ -534,10 +611,10 @@ hr{
     
         <div >
                     <h1>CAD burry</h1>
-                    <h3>18-January-2020, 10AM-1PM</h3>
+                    <h3>15-February-2020, 10AM-1PM</h3>
                     <h3>Venue : AB-3, 201</h3>
                 <div class="posterimg" style="height:50%;">
-                    <img src="download/Event/Event5.png">
+                    <img src="download/Event/Cadburry.jpg">
 
                 </div>
 
@@ -568,10 +645,10 @@ hr{
     
         <div >
                     <h1>Gamerex</h1>
-                    <h3>19-January-2020, 12PM-2PM</h3>
+                    <h3>16-February-2020, 12PM-2PM</h3>
                     <h3>Venue : AB-1, 411</h3>
                 <div class="posterimg" style="height:50%;">
-                    <img src="download/Event/Event6.png">
+                    <img src="download/Event/pubg.jpg">
 
                 </div>
 
@@ -615,7 +692,7 @@ hr{
     <hr>
     <div >
                     <h1>Drone Heaven With Hell 11</h1>
-                    <h3>-January-2020, 10AM-6PM</h3>
+                    <h3>14-February-2020, 10AM-6PM</h3>
                     <h3>Venue : KC ground</h3>
                 <div class="posterimg" style="height:50%;">
                     <img src="download/Event/Event7.jpg">
@@ -658,10 +735,10 @@ hr{
     
     <div >
                     <h1>Techno Trail</h1>
-                    <h3>19-January-2020, 1PM-3PM</h3>
+                    <h3>16-February-2020, 1PM-3PM</h3>
                     <h3>Venue : AB-3</h3>
                 <div class="posterimg" style="height:50%;">
-                    <img src="download/Event/Event6.png">
+                    <img src="download/Event/technotrails.jpg">
 
                 </div>
 
@@ -695,10 +772,10 @@ hr{
     <hr>
     <div >
                     <h1>Movie Show</h1>
-                    <h3>19-January-2020, 11AM-3PM</h3>
+                    <h3>16-February-2020, 11AM-3PM</h3>
                     <h3>Venue : AB-7, 211</h3>
                 <div class="posterimg" style="height:50%;">
-                    <img src="download/Event/movie.png">
+                    <img src="download/Event/movie.jpg">
 
                 </div>
 
